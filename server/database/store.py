@@ -30,7 +30,7 @@ def check_username(cur, username):
     else:
         return False
     
-def store_new_info(username, passward, path):
+def store_new_info(username, password, path):
     #return True if success register
 
     cxn = sqlite3.connect(path)
@@ -42,7 +42,7 @@ def store_new_info(username, passward, path):
         return False
     else:
         current_id = get_next_id(cur)
-        insert_to_db(cur, current_id, username, passward)
+        insert_to_db(cur, current_id, username, password)
         cur.close()
         cxn.commit()
         cxn.close()
