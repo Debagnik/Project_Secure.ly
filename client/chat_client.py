@@ -20,7 +20,7 @@ from assist.register_and_login import LoginWindow
 
 
 HOST = input('Please input the ip of the server:')
-PORT = 12345
+PORT = int(input('Please Enter the server Port:'))
 BUFSIZ = 1024
 ADDR = (HOST, PORT)
 

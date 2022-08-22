@@ -11,7 +11,7 @@ from assist import process
 
 DBPATH = 'database/userinfo.db'
 HOST = input('Please Enter the server ip:')
-PORT = 12345
+PORT = int(input('Please Enter the server port:'))
 BUFSIZ = 1024
 ADDR = (HOST, PORT)
 AD = {}
